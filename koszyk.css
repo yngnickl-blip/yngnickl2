@@ -1,0 +1,77 @@
+/* Koszyk - style oddzielne od mainpage.css */
+.cart-container {
+    padding: 50px 300px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f7fa;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    gap: 15px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cart-item span {
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+.cart-item button {
+    background: #ff5555;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background: #e04343;
+}
+
+#clear-cart {
+    background: #ecba4c;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#clear-cart:hover {
+    background: #d4a437;
+}
+
+/* Przyciski + i − */
+.cart-item button.plus,
+.cart-item button.minus {
+    background-color: #ff5555;       /* czerwony kolor tła */
+    color: #fff;                     /* biały tekst */
+    border: none;                    /* brak obramowania */
+    padding: 10px 16px;              /* rozmiar przycisku */
+    border-radius: 8px;              /* zaokrąglone rogi */
+    cursor: pointer;                 /* wskaźnik kursora */
+    font-size: 20px;                 /* duży znak + / - */
+    margin: 0 5px;                   /* odstęp między przyciskami */
+    transition: background 0.3s;     /* płynna zmiana koloru przy hover */
+}
+
+.cart-item button.plus:hover,
+.cart-item button.minus:hover {
+    background-color: #e04343;       /* ciemniejszy czerwony przy najechaniu */
+}
+.cart-item div {
+    display: flex;
+    align-items: center;      /* wyrównanie pionowe w środku */
+    gap: 5px;                 /* odstęp między przyciskami i liczbą */
+}

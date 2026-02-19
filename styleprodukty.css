@@ -1,0 +1,211 @@
+/* header */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 4px #f5f7fa;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* robi rzeczy nad stroną przy scrollowaniu */
+    background-color: #fff;
+}
+.banner img {
+    width: 80px;
+    height: auto;
+}
+.nazwastrony img {
+    width: 150px;
+    height: auto;
+}
+.logo-conteiner {
+    display: flex;
+    align-items: center;
+}
+.logo-link img {
+    height: 80px;
+    width: auto;
+}
+
+/* menu top */
+
+.topnav ul {
+    display: flex;      /* robi wolną przestrzeń */
+    align-items: center;    /*ustawia w centrum wolnej przestrzeni */
+    gap: 30px;  /*odstępy między napisami */
+}
+.topnav a {
+    text-decoration: none;  /*usuwa podkreślenia */
+    color: #1f1f11;
+}
+.topnav li {
+    list-style: none;   /*usuwa kropki */
+    font-size: 20px;
+}
+.topnav a:hover {
+    color: #91918c;
+}
+
+
+/* koszyk */
+.cart-icon {
+    top: 10px;    /* od góry nagłówka */
+    right: 20px;  /* od prawej krawędzi nagłówka */
+    font-size: 24px;
+    text-decoration: none;
+    color: #1f1f11;
+}
+
+
+/* sidebar */
+.sidebar {
+    position: sticky;
+    top: 90px;
+    height: fit-content;
+}
+.sidebar a {
+    text-decoration: none;
+    color: #1f1f11;
+}
+.sidebar a:hover {
+    color: #91918c;
+}
+.sidebar li {
+    list-style: none;
+    padding: 20px;          /*odsuwa napisy od sebie */
+    font-size: 20px;
+}
+.sidebar ul {
+    width: 150px;
+    height: auto;
+    padding-left: 40px;          /*robi niewidzianą ramkę dookoła menu */
+}
+
+
+
+/* layout */
+.layout {
+    display: flex;
+    align-items: top;
+}
+
+
+
+
+
+
+/* Główna część strony */
+main {
+    margin: 0 auto;
+}
+.kartki {
+    padding: 0 40px;
+    width: 100%;
+    background-color: #f5f7fa;
+    display: flex;
+    align-items: center;
+}
+.opis {
+    width: 100%;
+    padding: 10px 50px;
+    border-radius: 16px;
+}
+h2 {
+    font-size: 42px;
+}
+p {
+    font-size: 20px;
+    width: 90%;
+}
+
+
+
+/* slider */
+.slider {
+display: flex;
+align-items: center;
+gap: 30px;
+padding: 30px;
+}
+.slider img {
+    width: 300px;
+    height: 100%;
+    border-radius: 16px;
+}
+.slider p {
+    background-color: #f5f7fa;
+}
+.slide {
+    background-color: #f5f7fa;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    width: auto;
+}
+.slide3 a {
+  text-decoration: none;
+    color: #1f1f11;  
+}
+.slide a {
+    text-decoration: none;
+    color: #1f1f11;
+}
+.slide:hover, .slide2:hover, .slide3:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.sliderobrazy img {
+    width: 800px;
+    height: auto;
+    border-radius: 16px;
+}
+.slide2 p {
+    background-color: #c9ba2f;
+    width: 800px;
+    font-size: 28px;
+}
+.slide2 a {
+    text-decoration: none;
+    color: #1f1f11;
+}
+.slide2 {
+   background-color: #c9ba2f;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    width: 800px;
+}
+
+
+.slide2, .slide3 {
+    font-size: 28px;
+}
+
+.slide2 span, .slide3 span {
+    font-size: 20px;
+    padding-bottom: 20px;
+    display: block;
+}
+.slide3 {
+   background-color: #c92f2f;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    width: 800px; 
+}
+.slide3 p {
+    background-color: #c92f2f;
+    width: 800px;
+    font-size: 28px;
+}
+
+
+

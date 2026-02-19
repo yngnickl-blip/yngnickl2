@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koszyk</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="koszyk.css">
+</head>
+<body>
+    <header class="banner">
+        <div class="logo-conteiner">
+            <a href="mainpage.html" class="logo-link">
+                <img src="images/LOGO.jpg">
+                <img src="images/logonapis.jpg">
+            </a>
+        </div>
+        <nav class="topnav">
+            <ul>
+                <li><a href="mainpage.html#mojeprace">Moje prace</a></li>
+                <li><a href="produkty.html">Produkty</a></li>
+                <li><a href="mainpage.html#custom">Custom</a></li>
+                <li><a href="mainpage.html#omnie">O mnie</a></li>
+                <li><a href="mainpage.html#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <a href="koszyk.html" class="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </a>
+    </header>
+
+    <div class="cart-container">
+        <h1>Twój koszyk</h1>
+        <div id="cart-items"></div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="koszyk.js"></script>
+    <script src="zamowienie.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,315 @@
+/* header */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 4px #f5f7fa;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* robi rzeczy nad stroną przy scrollowaniu */
+    background-color: #fff;
+}
+.banner img {
+    width: 80px;
+    height: auto;
+}
+.nazwastrony img {
+    width: 150px;
+    height: auto;
+}
+.logo-conteiner {
+    display: flex;
+    align-items: center;
+}
+.logo-link img {
+    height: 80px;
+    width: auto;
+}
+
+/* menu top */
+
+.topnav ul {
+    display: flex;      /* robi wolną przestrzeń */
+    align-items: center;    /*ustawia w centrum wolnej przestrzeni */
+    gap: 30px;  /*odstępy między napisami */
+}
+.topnav a {
+    text-decoration: none;  /*usuwa podkreślenia */
+    color: #1f1f11;
+}
+.topnav li {
+    list-style: none;   /*usuwa kropki */
+    font-size: 20px;
+}
+.topnav a:hover {
+    color: #91918c;
+}
+
+
+/* koszyk */
+.cart-icon {
+    top: 10px;    /* od góry nagłówka */
+    right: 20px;  /* od prawej krawędzi nagłówka */
+    font-size: 24px;
+    text-decoration: none;
+    color: #1f1f11;
+}
+
+
+/* sidebar */
+.sidebar {
+    position: sticky;
+    top: 90px;
+    height: fit-content;
+}
+.sidebar a {
+    text-decoration: none;
+    color: #1f1f11;
+}
+.sidebar a:hover {
+    color: #91918c;
+}
+.sidebar li {
+    list-style: none;
+    padding: 20px;          /*odsuwa napisy od sebie */
+    font-size: 20px;
+}
+.sidebar ul {
+    width: 150px;
+    height: auto;
+    padding-left: 40px;          /*robi niewidzianą ramkę dookoła menu */
+}
+
+/* ==================== LAYOUT ==================== */
+.layout {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* ==================== SLIDER ==================== */
+.slider1, .slider2 {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.slider2 {
+    height: 800px;
+}
+
+.slider2 .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==================== MAIN CONTENT ==================== */
+main {
+    padding: 0 300px;
+}
+
+h2 {
+    font-size: 42px;
+    padding-top: 30px;
+}
+
+p {
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+/* ==================== CUSTOM BLOCK ==================== */
+#custom {
+    padding: 0 300px;
+    align-items: center;
+}
+
+#customizowane {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#kurtka img {
+    width: 800px;
+    height: auto;
+    border-radius: 16px;
+}
+
+#obrazobraz img {
+    height: 500px;
+    width: auto;
+    border-radius: 16px;
+}
+
+#kurtka p, #obrazobraz p {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#kurtka {
+    background-color: #ff5555;
+    border-radius: 16px;
+    width: 800px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#kurtka a, #obrazobraz a {
+    text-decoration: none;
+    color: #1f1f11;
+}
+
+#kurtka:hover, #obrazobraz:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+#obrazobraz {
+    background-color: #ecba4c;
+    border-radius: 16px;
+    width: auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* ==================== O MNIE ==================== */
+#omnie {
+    padding: 0 200px;
+    background-color: #fff;
+}
+
+#omnie p {
+    padding: 30px;
+    background-color: #f5f7fa;
+}
+
+#omnie h2 {
+    font-size: 42px;
+    display: block;
+    padding: 20px;
+}
+
+/* ==================== KONTAKT ==================== */
+#kontakt {
+    padding: 2% 10%;
+}
+
+#contact {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+#contact button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #45a049;
+}
+
+#contact-status {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+@media (max-width: 1200px) {
+    main, #custom, #omnie {
+        padding: 0 5%;
+    }
+    #kurtka img, #kurtka {
+        width: 90%;
+    }
+    .slider2 {
+        height: 50vw; /* wysokość dopasowana do szerokości ekranu */
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 6vw;
+    }
+    p, .topnav li, .sidebar li {
+        font-size: 4vw;
+    }
+    .topnav ul {
+        gap: 4vw;
+    }
+    .sidebar ul {
+        width: 40vw;
+        padding-left: 5vw;
+    }
+    #customizowane {
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .slider2 {
+        height: 70vw;
+    }
+}
