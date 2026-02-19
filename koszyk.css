@@ -22,7 +22,7 @@
 
 .cart-item span {
     flex-grow: 1;
-    font-size: 20px;
+    font-size: 4vw;
 }
 
 .cart-item button {
@@ -61,7 +61,7 @@
     padding: 10px 16px;              /* rozmiar przycisku */
     border-radius: 8px;              /* zaokrąglone rogi */
     cursor: pointer;                 /* wskaźnik kursora */
-    font-size: 20px;                 /* duży znak + / - */
+    font-size: 4vw;                 /* duży znak + / - */
     margin: 0 5px;                   /* odstęp między przyciskami */
     transition: background 0.3s;     /* płynna zmiana koloru przy hover */
 }

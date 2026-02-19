@@ -1,0 +1,136 @@
+/* ==================== MEDIA QUERIES TELEFON ==================== */
+@media (max-width: 480px) {
+    /* header */
+    .banner {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+    .logo-link img {
+        width: 3rem;
+        height: auto;
+    }
+    .logo-name img {
+        width: 15vw;
+    }
+
+
+
+
+    /* topnav */
+    .topnav ul {
+        flex-direction: row;
+        gap: 2vw;
+        padding: 0;
+    }
+    .topnav li {
+        font-size: 2vw;
+        text-align: left;
+    }
+
+    /* koszyk */
+    .cart-icon {
+        top: 1vw;
+        right: 2vw;
+        font-size: 4vw;
+    }
+
+    /* sidebar */
+    .sidebar {
+        top: 0;
+        width: 100%;
+        padding: 0 5vw;
+    }
+    .sidebar ul {
+        padding-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+        position: sticky;
+        top: 0;
+    }
+    .sidebar li {
+        font-size: 3vw;
+        padding: 10px 0;
+    }
+
+    /* layout */
+    .layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* sliders */
+    .slider1, .slider2 {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .slider2, .slider1 {
+        height: 60vw;
+    }
+    .slides {
+        height: 60vw;
+    }
+    .slides img {
+        height: 50vw;
+        width: auto;
+        max-width: 90vw;
+    }
+
+    /* main content */
+    main, #custom, #omnie {
+        padding: 0 5%;
+    }
+    h2 {
+        font-size: 6vw;
+    }
+    p {
+        font-size: 4vw;
+        padding-bottom: 20px;
+    }
+
+    /* custom block */
+    #customizowane {
+        flex-direction: column;
+        gap: 5vw;
+    }
+    #kurtka, #obrazobraz {
+        width: 90%;
+    }
+    #kurtka img, #obrazobraz img {
+        width: 100%;
+        height: auto;
+    }
+    #kurtka p, #obrazobraz p {
+        font-size: 4vw;
+        padding-bottom: 20px;
+    }
+
+    /* o mnie */
+    #omnie {
+        padding: 0 5%;
+    }
+    #omnie h2 {
+        font-size: 6vw;
+    }
+    #omnie p {
+        font-size: 4vw;
+        padding: 15px;
+    }
+
+    /* kontakt */
+    #kontakt {
+        padding: 5%;
+    }
+    #contact {
+        width: 95%;
+        padding: 15px;
+    }
+    #contact h2 {
+        font-size: 5vw;
+    }
+    #contact input, #contact textarea, #contact button {
+        font-size: 4vw;
+    }
+}
